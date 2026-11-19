@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10482e">
+  <meta name="description" content="AgriSense farmer dashboard: crop comparison, illustrative mandi prices, weather and farm budget planning.">
+  <title>AgriSense · Smart Farming</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="brand"><div class="brand-symbol">🌱</div><div><b>AgriSense</b><small id="brandTagline">स्मार्ट खेती, बेहतर फैसले</small></div></div>
+      <p class="nav-overline" id="navHeading">YOUR FARM DESK</p>
+      <nav class="side-nav" id="sideNav"></nav>
+      <div class="side-foot"><div class="sidebar-grow">🌾</div><strong id="sideFootTitle">Smarter decisions.</strong><p id="sideFootText">Made for your fields, crop by crop.</p><span class="side-caption" id="sideCaption">Frontend only · no server</span></div>
+    </aside>
+    <div class="work-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span>🌱</span><b>AgriSense</b></div>
+        <div class="topbar-start"><span class="eyebrow" id="topEyebrow">FARM INTELLIGENCE</span><div class="top-title" id="topTitle">Dashboard</div></div>
+        <div class="topbar-actions"><div class="select-wrap" id="locationTop"></div><div class="lang-switch"><button type="button" data-lang="hi" aria-label="हिन्दी">हिंदी</button><button type="button" data-lang="en" aria-label="English">EN</button></div></div>
+      </header>
+      <main id="view" class="main-content" tabindex="-1"></main>
+      <footer class="footnote" id="footerNote"></footer>
+    </div>
+  </div>
+  <nav class="bottom-nav" id="bottomNav" aria-label="Mobile navigation"></nav>
+  <div id="toast" class="toast" aria-live="polite" role="status"></div>
+  <script src="data.js"></script>
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
